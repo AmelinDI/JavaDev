@@ -25,8 +25,7 @@ public class Main {
 
     // 5. Написать публичный метод принимающий 2 параметра: первый типа int и второй типа long. Метод должен возвращать произведение значений параметров. Тип возвращаемого значения int.
     public static int mulIntLong(int inputInt, long inputLong) {
-        long outp = inputInt * inputLong;
-        return (int) outp;
+        return (int) (inputInt * inputLong);
     }
 
     // 6. Написать метод getMaxNumber принимающий 2 параметра: int и int. Метод должен сравнить переданные параметры между собой и вернуть максимальный. Для решения необходимо использовать IF или тернарный оператор ?:
