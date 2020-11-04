@@ -37,8 +37,7 @@ public class Main {
 
     // 7. Написать метод isCharA принимающий 1 параметр типа char. Если передана буква 'А', то возвращать true, а в остальных случаях false
     public static boolean isChar(char input){
-        if (input == 'А') return true;
-        else return false;
+        return input == 'А';
     }
 
     // 8. Написать метод isCharNumber принимающий 1 параметр типа char. Если передано число, то вернуть true, а в остальных случаях false
