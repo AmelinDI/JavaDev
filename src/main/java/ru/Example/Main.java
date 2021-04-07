@@ -14,6 +14,7 @@ public class Main {
         BinariFromMaxValue();
         System.out.println("Числовое значение символа:" + CharToInt('A'));
         System.out.println("Символ из числа:" + IntToChar (65));
+        System.out.println("Sobes 1: \"qqqwwwwererqq\" => " + transfer("qqqwwwwererqq"));
     }
 
 
@@ -67,5 +68,23 @@ public class Main {
     public static char IntToChar (int inputInt){
         return (char)inputInt;
     }
+
+    // Sobes1  String in = "qqqwwwwererqq" ==>> String out = "q3w4ererq2";
+    public static String transfer(String in) {
+        StringBuilder out = new StringBuilder();
+        for (int i = 1; i < in.length(); i++) {
+            int y = 1;
+            out.append(in.charAt(i - 1));
+            while ((i < in.length()) && (in.charAt(i) == in.charAt(i-1))){
+                y++;
+                i++;
+            }
+            if (y>1) {
+                out.append(y);
+            }
+        }
+        return out.toString();
+    }
+
 
 }
